@@ -1,14 +1,18 @@
+let meowsi
+let meowsi2
 function preload() {
-  // put preload code here
+  meowsi = loadImage('./images/ramirez.jpg')
+  meowsi2 = loadImage('./images/ramirez.jpg')
 }
 
 function setup() {
   // put setup code here
-  createCanvas(800,800)
+  createCanvas(meowsi.width,meowsi.height)
+  noLoop()
 }
 
 function draw() {
   // put drawing code here
   background(255)
-  rect(100,100,200,200)
+ image(meowsi,0,0)
 }
